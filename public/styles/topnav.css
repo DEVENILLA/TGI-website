@@ -1,0 +1,70 @@
+@font-face {
+    font-family: Cover1;
+    src: url(../assets/cover-1.ttf);
+}
+
+@font-face {
+    font-family: Norm1;
+    src: url(../assets/norm-1.ttf);
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+    position: fixed;
+    object-fit: fill;
+    width: 97.3vw;
+    top: 0;
+    left: 0;
+    background-color: rgba(51, 51, 51, 0.51);
+    backdrop-filter: blur(10px);
+    overflow: hidden;
+    z-index: 2;
+}
+
+/* Style the links inside the navigation bar */
+.topnav_home {
+    float: left;
+    background-color: #ffffff;
+    color: #000000;
+    text-align: center;
+    padding: .25vw 2vw;
+    text-decoration: none;
+    font: 2vw Norm1;
+    background-color: #ffffff;
+    color: #000000;
+    z-index: 2;
+}
+
+.topnav_text {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: .25vw 2vw;
+    text-decoration: none;
+    font: 2vw Norm1;
+    z-index: 2;
+}
+
+.topnav_icon {
+    float: right;
+    color: #f2f2f2;
+    padding: .1vw 3vw;
+    width: 2.6vw;
+    height: 2.6vw;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+/* Change the color of links on hover */
+.topnav_text:hover {
+    background-color: #ddd;
+    color: black;
+    z-index: 2;
+}
+
+/* Add a color to the active/current link */
+.topnav_text.active {
+    background-color: #ffffff;
+    color: white;
+    z-index: 2;
+}

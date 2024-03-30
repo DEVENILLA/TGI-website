@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tech Genius Institute</title>
+  <link rel="stylesheet" href="styles/index.css">
+  <script src="./js/index.js"></script>
+  <script defer src="publish.js" type="module"></script>
+</head>
+
+<body>
+
+<div class="cover-img">
+  <div class="cover-container">
+    <p class="cover-title">
+      Tech <br> Genius <br> Institute
+    </p>
+
+    <p class="cover-body">
+      Enlighten yourself about what is beyond traditional science
+    </p>
+  </div>
+  <div class=cover-img-2> </div>
+</div>
+
+<div class="label">
+  <a href="publish.html">
+    <img class=label_img_R src="assets/publish-button.png" style="width: 30vw;">
+  </a>
+  <p class="label_text_L">
+    <b>PUBLISH YOUR WORK?</b>
+    <br>
+    wanna share your knowledge <br> with us
+  </p>
+</div>
+
+<section class="choice-box">
+  <a href="subjects/nuclear.html">
+    <img src="assets/nuclear-1.png" alt="nuclear researches">
+  </a>
+  <a href="subjects/astro.html">
+    <img src="assets/astro-1.png" alt="astronomy researches">
+  </a>
+  <a href="subjects/bio.html">
+    <img src="assets/bio-1.png" alt="biotechnology researches">
+  </a>
+  <a href="subjects/cpu.html">
+    <img src="assets/cpu-1.png" alt="computational science researches">
+  </a>
+  <a href="subjects/nano.html">
+    <img src="assets/nano-1.png" alt="nanotechnology researches">
+  </a>
+</section>
+
+<div class="label">
+  <img class=label_img_R src="assets/research-1.png">
+  <p class="label_text_L">
+    <b>WHO ARE WE?</b>
+    <br>
+    we are an organization aiming
+    <br> to help revolutionize modern <br>
+    sciences and research methods
+  </p>
+</div>
+
+<div class="label">
+  <p class="label_text_R">
+    <b>CONTACTS</b>
+    <br>
+    email us at 3moriit2008@gmail.com
+  </p>
+  <img class=label_img_L src="assets/info-1.png">
+</div>
+
+<div class="label">
+  <p class="label_text_L">
+    <b>CREDITS</b>
+    <br>
+    website made by Sir Devenilla
+  </p>
+  <img class=label_img_R src="assets/devenilla.png">
+</div>
+
+
+<link rel="stylesheet" href="styles/topnav.css">
+<div class="topnav">
+  <a class="topnav_home" href="index.html">Home</a>
+  <a href="publish.html" class=topnav_text>Publish</a>
+</div>
+
+<script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-app.js";
+  import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.9.0/firebase-analytics.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  const firebaseConfig = {
+    apiKey: "AIzaSyBS9Gs4ISG3BGipeACgzyJjh-oZCqT2GMk",
+    authDomain: "tech-genius-institute.firebaseapp.com",
+    projectId: "tech-genius-institute",
+    storageBucket: "tech-genius-institute.appspot.com",
+    messagingSenderId: "186192007871",
+    appId: "1:186192007871:web:d817a331be1bff9d096c0a",
+    measurementId: "G-3XZ6WL6B2H"
+  };
+
+  // Initialize Firebase
+  const app = initializeApp(firebaseConfig);
+  const analytics = getAnalytics(app);
+</script>
+</body>
+</html>

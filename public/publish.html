@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Publish your research</title>
+  <link rel="stylesheet" href="styles/publish.css">
+  <script defer src="./publish.js"></script>
+</head>
+
+<body>
+
+<p class="cover-title" style="text-align: center">
+  Publish Your Work
+</p>
+
+<form style="margin: 0 auto; text-align: center;">  <label  draggable="false" style="color: white; font: 2.2vw Norm1">Insert Title</label>
+  <br>
+  <textarea id="title" rows="2"  minlength="1" maxlength="100"  style="width: 60vw; font-size: 2vw; text-align: center; resize: none;">
+
+  </textarea>
+</form>
+
+<form style="margin: 0 auto; text-align: center;">  <label draggable="false" style="color: white; font: 2.2vw Norm1">Insert Author Name</label>
+  <br>
+  <textarea id="author" rows="1"  minlength="4" maxlength="40" style="width: 50vw; font-size: 2vw; text-align: center; resize: none;">
+
+  </textarea>
+</form>
+
+<form style="margin: 0 auto; text-align: center; font: 1.5vw Norm1">  <label draggable="false" style="color: white; font: 2.2vw Norm1"> Select the category</label>
+  <br>
+  <select id="category" name="Category" style="font: 3vw Norm1; text-align: center; height: 4vw">
+    <option value="astro" style="font: 3vw Norm1; text-align: center">astronomy</option>
+    <option value="nano" style="font: 3vw Norm1; text-align: center">nanotechnology</option>
+    <option value="nuke" style="font: 3vw Norm1; text-align: center">nuclear science</option>
+    <option value="cpu" style="font: 3vw Norm1; text-align: center">computational science</option>
+    <option value="bio" style="font: 3vw Norm1; text-align: center">biotechnology</option>
+  </select>
+</form>
+
+<br>
+
+<div style="object-fit: cover; align-self: center; text-align: center">
+  <input type="file" accept="image/*" name="image" id="file_image" style="display: none;">
+  <label for="file_image" style="cursor: pointer; font: 3vw Norm1; color: white; text-align: center" >[ Upload Thumnail 16:9 ]</label>
+  <br>
+  <img id="output" width="200" />
+</div>
+
+<br>
+
+<div style="object-fit: cover; align-self: center; text-align: center">
+  <input type="file" accept="application/pdf" name="pdf" id="file_pdf" style="display: none;">
+  <label for="file_pdf" style="cursor: pointer; font: 3vw Norm1; color: white; text-align: center" >[ Upload Research Paper ]</label>
+</div>
+
+<br>
+
+
+<form>
+  <button id="publish-button" type="button" value="publish-button"  style="display: block; margin: 0 auto; width: 20vw; text-align: center; font: 3vw Norm1">
+    <b>PUBLISH</b>
+  </button>
+</form>
+
+
+<link rel="stylesheet" href="styles/topnav.css">
+<div class="topnav">
+  <a class="topnav_home" href="index.html">Home</a>
+  <a href="publish.html" class=topnav_text>Publish</a>
+</div>
+</body>
+</html>

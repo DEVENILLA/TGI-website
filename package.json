@@ -1,0 +1,8 @@
+{
+  "name": "TGI",
+  "version": "1.0.0",
+  "dependencies": {
+    "@firebase/app": "^0.9.29",
+    "firebase": "^10.9.0"
+  }
+}

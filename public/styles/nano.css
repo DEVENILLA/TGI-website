@@ -1,0 +1,190 @@
+@font-face {
+    font-family: Cover1;
+    src: url(../assets/cover-1.ttf);
+}
+
+@font-face {
+    font-family: Norm1;
+    src: url(../assets/norm-1.ttf);
+}
+
+body {
+    background-color: #000f1c;
+}
+
+.cover-img {
+    top: 0;
+    left: 0;
+    align-self: center;
+    width: 98vw;
+    height: 50vw;
+    object-fit: cover; /* Ensures image covers the entire area */
+    z-index: -10;
+    margin-bottom: 20vw;
+    margin-top: -9vw;
+    padding-top: 10vw;
+
+    background-image: url("../assets/nano-cover.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.cover-img-2 {
+    /*
+    background-image: url("../assets/carbon.png");
+    background-size: 25vw 25vw;
+    background-position: 60vw 10vw;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 40vw;
+    transition: transform 0.3s ease-in-out;
+     */
+}
+
+.cover-img-2:hover
+{
+    transform: scale(1.1);
+}
+
+.cover-container
+{
+    float: left;
+    height: 70vw;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-left: 5vw;
+    object-fit: cover;
+}
+
+.cover-title
+{
+    font: 8vw Cover1;
+    color: #c9fbff;
+    line-break: normal;
+    text-shadow: 0 0 .1vw rgba(255, 255, 255, 0.14), 0 0 .2vw rgba(77, 208, 255, 0.07), 0 0 .25vw rgba(77, 249, 255, 0.14), 0 0 .45vw rgba(77, 255, 255, 0.73), 0 0 3.5vw #4DFFFFBA, 0 0 .45vw #4DFFFFBA, 0 0 .5vw #4DFFFFBA;
+}
+
+.cover-body
+{
+    font: 2.5vw Norm1;
+    color: WHITE;
+    transform: translateY(-7vw);
+    text-shadow: 0 0 2vw #fff, 0 0 4vw #4deaff, 0 0 5vw #4dfff9, 0 0 9vw #4df0ff, 0 0 7vw #ff4da6, 0 0 9vw #ff4da6, 0 0 10vw #ff4da6;
+}
+
+.choice-box {
+    display: flex; /* Use flexbox for side-by-side layout */
+    flex-wrap: wrap; /* Allow images to wrap to next line if needed */
+    justify-content: space-between; /* Distribute images evenly */
+    margin: 0 auto; /* Center the container horizontally */
+}
+
+.choice-box img {
+    width: 15%; /* Adjust image width as needed */
+    margin: 10px;
+    margin-top: -10vw;
+    margin-bottom: 25vw;
+    transition: transform 0.3s ease-in-out;
+}
+
+.choice-box img:hover
+{
+    transform: scale(1.1);
+}
+
+.label {
+    align-self: center;
+    width: 75vw;
+    color: white;
+    height: 50vw;
+    margin: 0 auto;
+    padding-top: 0px;
+    padding-left: 5vw;
+    object-fit: cover;
+}
+
+.label_text_L {
+    float: left;
+    text-anchor: start;
+    text-align: left;
+    padding: .5vw 1vw;
+    text-decoration: none;
+    font: 4vw Norm1;
+}
+
+.label_text_R {
+    float: right;
+    text-anchor: start;
+    text-align: right;
+    padding: .5vw 1vw;
+    text-decoration: none;
+    font: 4vw Norm1;
+}
+
+.label_img_R {
+    float: right;
+    padding: .5vw .5vw;
+    width: 20vw;
+    height: 20vw;
+    z-index: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.label_img_R:hover
+{
+    transform: scale(1.1);
+}
+
+.label_img_L {
+    float: left;
+    padding: .5vw .5vw;
+    width: 20vw;
+    height: 20vw;
+    z-index: 0;
+    transition: transform 0.3s ease-in-out;
+}
+
+.label_img_L:hover
+{
+    transform: scale(1.1);
+}
+
+.object
+{
+    width: 384px;
+    height: 216px;
+}
+
+.title
+{
+    font: 30px Norm1;
+    width: 100px;
+    color: white;
+}
+.author
+{
+    font: 20px Norm1;
+    width: 100px;
+    color: rgba(255, 255, 255, 0.75);
+}
+.date
+{
+    font: 20px Norm1;
+    width: 100px;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.research-item
+{
+    margin: 10px;
+    object-fit: contain;
+}
+
+.research-grid
+{
+    padding: 20px;
+    object-fit: cover;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(384px, 1fr));  /* Adjust as needed */
+    grid-gap: 10px;  /* Adjust spacing as needed */
+}
