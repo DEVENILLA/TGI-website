@@ -1,6 +1,6 @@
 import {research_data} from "./research.js";
 
-let example_data = new research_data("98% of men want to be dominated by shinjiku arc maki", "sir devenilla", "nano", null, new Date(), null);
+let example_data = new research_data("50% of food is edible", "sir devenilla", "nano", null, new Date(), null);
 
 const list = [example_data, example_data, example_data, example_data, example_data, example_data,
     example_data, example_data, example_data, example_data, example_data, example_data,
